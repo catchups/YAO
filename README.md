@@ -33,8 +33,7 @@ cleos get code yaocorestake > yaocorestake.hash
 ```
 
 比較哈希:
-`shasum -a 256 build/contracts/yao.token/yao.token.wasm` of `yaocoretoken.hash`
-`shasum -a 256 build/contracts/yaostake/yaostake.wasm` of `yaocorestake.hash`
-
+- 比較 `shasum -a 256 build/contracts/yao.token/yao.token.wasm` 和 `yaocoretoken.hash`
+- 比較 `shasum -a 256 build/contracts/yaostake/yaostake.wasm` 和 `yaocorestake.hash`
 - 令牌哈希: 837bd71762daddb2b289c976c4e9b8d9fb4d4f738442190688f065dcd0cc66f6
 - 池哈希: d8cb7834d14abdf683fc55ed09e0adcfa17ffeaaf9c31df3838a94b4e7de267e
