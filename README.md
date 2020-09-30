@@ -10,7 +10,7 @@
 - 代幣符號: YAO
 - 代幣總量: 21000000000 YAO
 - 代幣合約: [yaocoretoken](https://bloks.io/account/yaocoretoken)
-- 礦池合約: [yaocorestake](https://bloks.io/account/yaocorestake)
+- 礦池合約: [yaostakecore](https://bloks.io/account/yaostakecore)
 
 ![Pool](./plan.png)
 
@@ -24,7 +24,7 @@ YAO代幣合約以及挖礦合約私鑰已交給系統黑洞賬戶: eosio.null, 
 
 ```
 cleos get code yaocoretoken > yaocoretoken.hash
-cleos get code yaocorestake > yaocorestake.hash
+cleos get code yaostakecore > yaostakecore.hash
 ```
 
 從源代碼構建:
@@ -34,6 +34,6 @@ cleos get code yaocorestake > yaocorestake.hash
 
 比較哈希:
 - 比較 `shasum -a 256 build/contracts/yao.token/yao.token.wasm` 和 `yaocoretoken.hash`
-- 比較 `shasum -a 256 build/contracts/yaostake/yaostake.wasm` 和 `yaocorestake.hash`
+- 比較 `shasum -a 256 build/contracts/yaostake/yaostake.wasm` 和 `yaostakecore.hash`
 - 令牌哈希: 837bd71762daddb2b289c976c4e9b8d9fb4d4f738442190688f065dcd0cc66f6
 - 池哈希: d8cb7834d14abdf683fc55ed09e0adcfa17ffeaaf9c31df3838a94b4e7de267e
